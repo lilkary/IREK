@@ -4,36 +4,50 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
         <title>iREK</title>
     </head>
     <body>
         <header>
-            <h1>iREK</h1>
-            <nav>
-                <a href="#Inicio"><span>Inicio</span></a>
-                <a href="#Quienes_somos"><span>¿Quienes somos?</span></a>
-                <a href="#Objetivos"><span>Objetivos</span></a>
-                <a href="#Registrate"><span>Registrate</span></a>
+            <div class="title">
+                <img src="./img/logo.svg" alt="iREK logo">
+                <h1>iREK</h1>
+            </div>
+            <nav id="nav">
+                <a href="#inicio"><span>Inicio</span></a>
+                <a href="#somos"><span>¿Quienes somos?</span></a>
+                <a href="#objetivos"><span>Objetivos</span></a>
+                <a href="#new_user"><span>Registrate</span></a>
             </nav>
+
+            <div class="menu-icon">
+                <div class="icon" id="icon"></div>
+            </div>
         </header>
 
         <!---De lil kary-->
-        <section id="Inicio">
-            <img src="#" alt="#">
+        <section id="inicio">
+            <img src="./img/unidos.svg" alt="Personas unidas SVG">
             <div class="text">
                 <h2>Unidos podemos hacer cosas increibles.</h2>
                 <p>
                     En iREK buscamos unir personas de todos los tipos, encuentra 
-                    tu estilo ideal y conoce a personas con tus mismos gustos. 
+                    tu estilo ideal y conoce a personas con tus mismos gustos.
+                    <br>
+                    <br>
                     Si tu estilo no está aquí, puedes hacer parte y agregarlo 
                     tu mismo, puedes tener más de un estilo y cambiarlos a tu gusto,
-                    tu desides quien ser. Cada persona tiene derecho a ser quien desee
+                    tu desides quien ser. 
+                    <br>
+                    <br>
+                    Cada persona tiene derecho a ser quien desee
                     y eso no le resta valor.
                 </p>
             </div>
         </section>
-        <section>
-            <img src="" alt="">
+        <section id="idea_verde">
+            <img src="./img/idea-verde.svg" alt="Arbol y idea de color verde SVG">
             <div class="text">
                 <h2>Tengamos juntos una idea verde para cambiar al planeta.</h2>
                 <p>
@@ -47,8 +61,8 @@
         <!---De lil kary-->
 
         <!---De Rey-->
-        <section>
-            <img src="" alt="">
+        <section id="somos">
+            <img src="./img/somos.svg" alt="Personas sentadas SVG">
             <div class="text">
                 <h2>¿Quienes somos?</h2>
                 <p>
@@ -60,8 +74,8 @@
             </div>
         </section>
 
-        <section>
-            <img src="" alt="">
+        <section id="objetivos">
+            <img src="./img/objetivos.svg" alt="Chica frente al pc SVG">
             <div class="text">
                 <h2>Nuestros objetivos</h2>
                 <p>
@@ -75,9 +89,113 @@
         
         <!---De Jhon-->
         <section>
+            <div class="follow">
+                <h2>Siguenos</h2>
+                <div class="profile">
+                    <a href="https://www.instagram.com/https_karengm/">
+                        <img src="./img/instagram.svg" alt="Instagram logo svg pixabay">
+                        <span>@23_karengm</span>
+                    </a>
+                </div>
+                <div class="profile">
+                    <a href="https://fb.com/lalilkary">
+                        <img src="./img/facebook.svg" alt="facebook logo svg pixabay">
+                        <span>fb.com/lalilkary</span>
+                    </a>
+                </div>
+                <div class="profile">
+                    <a href="https://www.instagram.com/reyy.comm/">
+                        <img src="./img/instagram.svg" alt="Instagram logo svg pixabay">
+                        <span>@reyy.comm</span>
+                    </a>
+                </div>
+                <div class="profile">
+                    <a href="https://fb.com/rey.guevara.7311">
+                        <img src="./img/facebook.svg" alt="facebook logo svg pixabay">
+                        <span>rey.guevara.7311</span>
+                    </a>
+                </div>
+                <div class="profile">
+                    <a href="https://twitter.com/GuevaraCommm">
+                        <img src="./img/twitter.svg" alt="twitter logo svg pixabay">
+                        <span>@GuevaraCommm</span>
+                    </a>
+                </div>
+            </div>
+            <form id="new_user" autocomplete="x_v">
+                <h2>Registrate</h2>
 
+                <div class="input">
+                    <label for="name"><span>Nombre</span></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="input">
+                    <label for="email"><span>Email</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="input">
+                    <label for="password"><span>Contraseña</span></label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div class="input">
+                    <label for="edad"><span>Edad</span></label>
+                    <input type="number" name="edad"  id="edad" min="13" max="120" required>
+                </div>
+                <input type="submit" value="Registrarse">
+            </form>
+            <div class="idea">
+                <img src="./img/idea.svg" alt="idea irek">
+                <a href="mailto:karengama23181108@gmail.com">
+                    <span>
+
+                        Puedes enviarla a 
+                        <br>
+                        <span class="email">karengama23181108@gmail.com</span> 
+                    </span>
+                </a>
+            </div>
         </section>
-        <section></section>
+
+        <footer>
+            <section>
+                <div class="follow a">
+                    <h2>Siguenos</h2>
+                    <div class="profile">
+                        <a href="https://www.instagram.com/https_karengm/">
+                            <img src="./img/instagram.svg" alt="Instagram logo svg pixabay">
+                            <span>@23_karengm</span>
+                        </a>
+                    </div>
+                    <div class="profile">
+                        <a href="https://fb.com/lalilkary">
+                            <img src="./img/facebook.svg" alt="facebook logo svg pixabay">
+                            <span>fb.com/lalilkary</span>
+                        </a>
+                    </div>
+                    <div class="profile">
+                        <a href="https://www.instagram.com/reyy.comm/">
+                            <img src="./img/instagram.svg" alt="Instagram logo svg pixabay">
+                            <span>@reyy.comm</span>
+                        </a>
+                    </div>
+                    <div class="profile">
+                        <a href="https://fb.com/rey.guevara.7311">
+                            <img src="./img/facebook.svg" alt="facebook logo svg pixabay">
+                            <span>rey.guevara.7311</span>
+                        </a>
+                    </div>
+                    <div class="profile">
+                        <a href="https://twitter.com/GuevaraCommm">
+                            <img src="./img/twitter.svg" alt="twitter logo svg pixabay">
+                            <span>@GuevaraCommm</span>
+                        </a>
+                    </div>
+                </div>
+        </footer>
+        <script src="./js/main.js"></script>
         <!---De Jhon-->
     </body>
 </html>
