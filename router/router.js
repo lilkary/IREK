@@ -6,6 +6,14 @@ const User     = require('../database/models')
 router.all("/new-user", validator)
 
 
+router.get("/", (req, res)=> {
+  if(req.protocol == "http"){
+    res.redirect("https://irek.herokuapp.com/")
+    return
+  }
+  res.sendFile("./public/index.html")
+})
+
 router.post("/new-user", async (req, res)=> {
 
   try {

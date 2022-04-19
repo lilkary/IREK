@@ -27,8 +27,7 @@ mongoose.connection.on("error", err => {
 app.use(express.urlencoded({ extended : true }))
 app.use(express.json())
 app.use(multer().array())
-app.use(express.static("public"))
-app.use(redirect)
 app.use(router)
+app.use(express.static("public"))
 
 app.listen(PORT, ()=> console.log("App listen in the port: " + PORT))
