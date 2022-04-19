@@ -1,0 +1,25 @@
+{
+  "name": "irek",
+  "version": "1.0.0",
+  "description": "\"App para unir personas y hacer juntos un impacto medio ambiental\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilkary/IREK.git"
+  },
+  "author": "Karen Alejandra Gallardo Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilkary/IREK/issues"
+  },
+  "homepage": "https://github.com/lilkary/IREK#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0",
+    "multer": "^1.4.4"
+  }
+}
