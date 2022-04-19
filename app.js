@@ -23,7 +23,7 @@ mongoose.connection.on("error", err => {
 
 
 //Express middlewares
-
+app.set("view-engine", "pug")
 app.use(express.urlencoded({ extended : true }))
 app.use(express.json())
 app.use(multer().array())
