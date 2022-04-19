@@ -6,11 +6,6 @@ const User     = require('../database/models')
 router.all("/new-user", validator)
 
 
-router.get("/", (req, res)=> {
-
-  res.render("index")
-})
-
 router.post("/new-user", async (req, res)=> {
 
   try {
