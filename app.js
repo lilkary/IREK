@@ -1,8 +1,8 @@
 const express  = require("express")
 const mongoose = require("mongoose")
 const multer   = require("multer")
-const bcrypt   = require("bcryptjs")
 const router = require("./router/router")
+const redirect = require("./middlewares/https.redirect")
 const PORT     = process.env.PORT || 3000
 const app      = express()
 
@@ -28,6 +28,7 @@ app.use(express.urlencoded({ extended : true }))
 app.use(express.json())
 app.use(multer().array())
 app.use(express.static("public"))
+app.use(redirect)
 app.use(router)
 
 app.listen(PORT, ()=> console.log("App listen in the port: " + PORT))

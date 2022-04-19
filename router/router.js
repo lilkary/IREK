@@ -5,8 +5,9 @@ const router    = express.Router()
 const User     = require('../database/models')
 router.all("/new-user", validator)
 
+
 router.post("/new-user", async (req, res)=> {
-  
+
   try {
     
     const Data = req.body

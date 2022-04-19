@@ -49,7 +49,6 @@ const ResErrorValidator = res => {
     span.textContent = ''
   })
 
-  console.log(res)
   if(res.message){
 
     id("alert_message").$("span").innerHTML = res.message //Write message in the alert
