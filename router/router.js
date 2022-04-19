@@ -7,6 +7,7 @@ router.all("/new-user", validator)
 
 
 router.get("/", (req, res)=> {
+  console.log(req.protocol)
   if(req.protocol == "http"){
     res.redirect("https://irek.herokuapp.com/")
     return
