@@ -66,7 +66,6 @@
 }
 body{
   background: var(--white);
-  padding-top: 7vw;
 }
 
 header{
@@ -99,11 +98,16 @@ header nav a{
   font-weight: 500;
 }
 
+.space{
+  height: 7vw;
+  width: 100%;
+  display: block;
+}
 section{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 2.5vw 0 2.5vw 1vw;
+  margin: 0 0 0 1vw;
 }
 
 section .text {
@@ -167,6 +171,9 @@ form{
   box-shadow: .2vw .7vw 1vw var(--shadow);
 }
 
+#registrarse{
+  display: contents;
+}
 form h2{
   margin-bottom: 3vw;
   font-size: 2vw;
@@ -305,7 +312,9 @@ input[type="submit"]{
   header nav.open{
     left: 0;
   }
-
+  .space{
+    height: 70px;
+  }
   header .menu-icon{
     display: block;
   }
@@ -315,10 +324,13 @@ input[type="submit"]{
   }
   section{
     flex-direction: column;
-    margin: 90px 0;
+    margin: 0;
   }
   section img{
     width: 60%;
+  }
+  section#inicio{
+    margin-top: 0
   }
   section .text h2{
     font-size: 20px;
