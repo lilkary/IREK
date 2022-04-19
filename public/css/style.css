@@ -103,7 +103,7 @@ section{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 0 5vw 1vw;
+  margin: 2.5vw 0 2.5vw 1vw;
 }
 
 section .text {
