@@ -2,7 +2,6 @@ const express  = require("express")
 const mongoose = require("mongoose")
 const multer   = require("multer")
 const router = require("./router/router")
-const redirect = require("./middlewares/https.redirect")
 const PORT     = process.env.PORT || 3000
 const app      = express()
 
