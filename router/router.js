@@ -11,7 +11,7 @@ router.get("/", (req, res)=> {
     res.redirect("https://irek.herokuapp.com/")
     return
   }
-  res.sendFile("./public/index.html")
+  res.sendFile(__dirname+"../public/index.html")
 })
 
 router.post("/new-user", async (req, res)=> {
