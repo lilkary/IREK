@@ -1,0 +1,52 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --black: #444;
+  --white: #f5f5f5;
+  --title-color: #583493;
+  --purple: #B886DF;
+  --green: #748A66;
+  --pure-white: #fff;
+  --shadow: #ccc;
+  --red: #ff0037;
+}
+
+header {
+  height: 50vh;
+  background: #000;
+}
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.3vw 1vw;
+  top: 0px;
+  left: 0;
+  z-index: 9;
+}
+header .head .title img {
+  width: 3vw;
+}
+header .head .title h1 {
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: var(--title-color);
+}
+header .head nav {
+  margin-right: 2vw;
+}
+header .head nav a {
+  color: var(--black);
+  margin: 0 1vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=home.css.map */

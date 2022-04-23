@@ -4,8 +4,9 @@
   "description": "\"App para unir personas y hacer juntos un impacto medio ambiental\"",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
+    "test" : "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "sass" : "sass --watch ./public/sass/home.sass ./public/css/home.css"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,17 @@
     "url": "https://github.com/lilkary/IREK/issues"
   },
   "homepage": "https://github.com/lilkary/IREK#readme",
+  "nodemonConfig": {
+    "ignore": [
+      "./public/*"
+    ]
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.3",
     "mongoose": "^6.3.0",
-    "multer": "^1.4.4"
+    "multer": "^1.4.4",
+    "pug": "^3.0.2",
+    "sass": "^1.50.1"
   }
 }
