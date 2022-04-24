@@ -18,31 +18,110 @@
 
 
 header
-    height: 50vh
-    background: #000
+    position: relative
+    height: 55vh
+    background: url(https://media.discordapp.net/attachments/799402821485068380/967350509126156318/f.webp?width=960&height=443), #000c
+    background-size: cover
+    background-position-y: top
+    background-position-x: left
+    color: var(--pure-white)
+
+    .background
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: #0006
+       
+
+    * 
+        z-index: 2
     .head
         display: flex
         justify-content: space-between
         align-items: center
         width: 100%
-        padding: .3vw 1vw
         top: 0px
         left: 0
         z-index: 9
 
         .title 
+            margin: 1vw 2vw
             img 
-                width: 3vw 
+                width: 2.6vw
 
             h1 
                 font-weight: 500
                 font-size: 1.2vw 
-                color: var(--title-color)
             
         nav
             margin-right: 2vw
             a 
-                color: var(--black)
+                color: var(--pure-white)
                 margin: 0 1vw
                 font-size: 1.2vw
                 font-weight: 500
+
+    .description 
+        position: relative
+        margin: 2vw 4vw
+        max-width: 35%
+
+        h2 
+            font-size: 2vw
+            margin: 0 0 1vw 0 
+
+        p 
+            font-size: 1.1vw
+
+
+.styles_container 
+    margin: 1vw 4vw
+
+    h2
+        font-size: 2vw
+        color: var(--purple)
+        font-weight: 500
+        margin: 1vw 0
+
+    .container 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+        align-items: center
+        max-width: 100%
+        margin: auto
+        height: auto
+
+        
+
+        .style 
+            width: 12.4vw 
+            height: 15vw
+            background: gray
+            border-radius: .6vw
+            box-shadow: 0px 1px 7px var(--shadow)
+            position: relative
+            overflow: hidden
+            margin: 1vw
+            cursor: pointer
+
+            &:hover
+                box-shadow: none
+                transition: .4s
+            img 
+                width: 100%
+                height: 100%
+
+            .type
+                position: absolute
+                font-size: 1.2vw
+                bottom: 0
+                left: 0
+                padding: .4vw
+                border-radius: 0 .3vw 0 .6px
+                background: #0005
+                color: var(--pure-white)
+
+
