@@ -134,6 +134,9 @@ header .description p {
   left: -120vw;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
+  man-width: 100vw;
+  overflow: hidden;
   background: var(--pure-white);
   z-index: 3;
 }
@@ -163,6 +166,7 @@ header .description p {
 #stylesView .header .title a {
   text-decoration: none;
   color: var(--black);
+  font-size: 1.2vw;
 }
 #stylesView .header .title a h2 {
   font-weight: normal;
