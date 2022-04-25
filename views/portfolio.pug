@@ -1,0 +1,152 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/style.css")
+        link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+        title iREK
+    body
+        header
+            .title
+                img(src="/img/logo.svg", alt="iREK logo svg")
+                h1 iREK
+
+            nav#nav
+                a(href="#inicio")
+                    span Inicio
+
+                a(href="#somos")
+                    span Quienes somos
+
+                a(href="#objetivos")
+                    span Objetivos 
+
+                a(href="#new_user")
+                    span Login
+
+
+            .menu-icon 
+                .icon#icon 
+
+        section#inicio 
+            img(src="./img/unidos.svg", alt="Personas unidas SVG")
+            .text 
+                h2 Unidos podemos hacer cosas increibles.
+                p 
+                    |En iREK buscamos unir personas de todos los tipos, encuentra 
+                    |tu estilo ideal y conoce a personas con tus mismos gustos.
+                    br
+                    br
+                    |Si tu estilo no está aquí, puedes hacer parte y agregarlo 
+                    |tu mismo, puedes tener más de un estilo y cambiarlos a tu gusto,
+                    |tu desides quien ser. 
+                    br
+                    br
+                    |Cada persona tiene derecho a ser quien desee
+                    |y eso no le resta valor.
+
+        section#idea_verde 
+            img(src="./img/idea-verde.svg", alt="Arbol y idea de color verde SVG")
+            .text 
+                h2 Tengamos juntos una idea verde para cambiar al planeta.
+                p 
+                    |Durante siglos nuestro planeta nos ha ayudado con 
+                    |inumerables cosas y nos a permitido vivir en el. Hoy 
+                    |es momento de ayudarlo nosotros. Tengamos una idea 
+                    |color verde y ayudemos juntos al planeta
+        
+        section#somos 
+            img(src="./img/somos.svg", alt="Personas sentadas SVG")
+            .text 
+                h2 Unidos podemos hacer cosas increibles.
+                p 
+                    |Somos un par de estudiantes, queriendo unir personas en base 
+                    |a su estilo y gustos, con el pensamiento de que cada persona, 
+                    |sin importar su forma de vestir, genero de música, color 
+                    |favorito y demás, tiene el mismo valor que el resto.
+
+        section#objetivos 
+            img(src="/img/objetivos.svg", alt="Chica frente a la pc SVG")
+            .text 
+                h2 Nuestros objetivos 
+                p 
+                    |Queremos que todas las personas independientemente de quienes 
+                    |sean, puedan encontrar personas con sus mismos gustos y 
+                    |conocer más y aceptar los gustos de de los demás. 
+
+        <section>
+            .follow
+                h2 Siguenos
+                .profile
+                    a( href="https://www.instagram.com/https_karengm/")
+                        img( src="./img/instagram.svg", alt="Instagram logo svg")
+                        span @23_karengm
+
+                .profile
+                    a( href="https://fb.com/lalilkary")
+                        img( src="./img/facebook.svg", alt="facebook logo svg pixabay")
+                        span fb.com/lalilkary
+
+                .profile
+                    a(href="https://www.instagram.com/reyy.comm/")
+                        img( src="./img/instagram.svg", alt="Instagram logo svg pixabay")
+                        span @reyy.comm
+                   
+                .profile
+                    a( href="https://fb.com/rey.guevara.7311")
+                        img( src="./img/facebook.svg", alt="facebook logo svg pixabay")
+                        span rey.guevara.7311
+
+                .profile
+                    a( href="https://twitter.com/GuevaraCommm")
+                        img( src="./img/twitter.svg", alt="twitter logo svg pixabay")
+                        span @GuevaraCommm
+
+            form#new_user( autocomplete="off")
+                h2 Registrate 
+
+                .input
+                    label(for="name")
+                        span Nombre 
+
+                    input(tpye="text", name="name")#name
+                    p#name_err.message-err
+                
+
+                .input
+                    label(for="email")
+                        span Email
+
+                    input(tpye="email", name="email")#email
+                    p#email_err.message-err
+                
+
+                .input
+                    label(for="password")
+                        span Contraseña
+
+                    input(tpye="password", name="password")#password
+                    p#password_err.message_err                
+
+                .input
+                    label(for="edad")
+                        span Edad
+
+                    input(type="number", name="edad")#edad
+                    p#edad_err.message-err
+                
+                input( type="submit", value="Registrarse")
+
+                div
+                    a( href="/home")
+                        spam No tengo cuenta
+               
+            .idea
+                img( src="./img/idea.svg" alt="idea irek")
+                a( href="mailto:karengama23181108@gmail.com")
+                    span
+                        |Puedes enviarla a 
+                        br
+                        span( class="email") karengama23181108@gmail.com

@@ -41,8 +41,10 @@ router.post("/new-user", async (req, res)=> {
 })
 
 
-// localhost:3000/xd
 
+router.get("/", (req, res)=> {
+  res.render("portfolio")
+})
 router.get("/home", (req, res)=> {
   res.render("home")
 })

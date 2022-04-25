@@ -28,7 +28,7 @@ app.set("view engine", "pug")
 app.use(express.urlencoded({ extended : true }))
 app.use(express.json())
 app.use(multer().array())
-app.use(express.static("public"))
 app.use(router)
+app.use(express.static("public"))
 
 app.listen(PORT, ()=> console.log("App listen in the port: " + PORT))
