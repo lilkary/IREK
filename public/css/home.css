@@ -15,6 +15,7 @@
   --pure-white: #fff;
   --shadow: #ccc;
   --red: #ff0037;
+  --purple-white: #f8f2ff;
 }
 
 header {
@@ -124,6 +125,187 @@ header .description p {
   border-radius: 0 0.3vw 0 0.6px;
   background: rgba(0, 0, 0, 0.3333333333);
   color: var(--pure-white);
+}
+
+#stylesView {
+  position: absolute;
+  transition: 0.5s;
+  top: 0;
+  left: -120vw;
+  width: 100vw;
+  height: 100vh;
+  background: var(--pure-white);
+  z-index: 3;
+}
+#stylesView img {
+  pointer-events: none;
+}
+#stylesView.open {
+  left: 0;
+}
+#stylesView .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+}
+#stylesView .header .title {
+  display: flex;
+  align-items: center;
+  margin: 0.7vw 1.4vw;
+}
+#stylesView .header .title .back-button svg {
+  width: 2.5vw;
+  height: 2.5vw;
+  cursor: pointer;
+}
+#stylesView .header .title a {
+  text-decoration: none;
+  color: var(--black);
+}
+#stylesView .header .title a h2 {
+  font-weight: normal;
+  font-size: 1.6vw;
+  margin-left: 0.8vw;
+  padding-bottom: 0.3vw;
+}
+#stylesView .header nav {
+  margin-right: 1vw;
+}
+#stylesView .header nav a {
+  color: var(--black);
+  margin: 0 1vw;
+}
+#stylesView .style {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vw 1.4vw;
+}
+#stylesView .style .img img {
+  width: 38vw;
+  height: 45vh;
+  border-radius: 0.5vw;
+}
+#stylesView .style .details {
+  width: 53vw;
+  margin-right: 2vw;
+}
+#stylesView .style .details h2 {
+  color: var(--purple);
+  margin-bottom: 2vw;
+  font-size: 2vw;
+}
+#stylesView .style .details p {
+  font-weight: 400;
+  color: var(--black);
+  font-size: 1.35vw;
+  max-height: 39vh;
+  overflow-x: hidden;
+}
+#stylesView .aside {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.4vw;
+}
+#stylesView .aside .comments {
+  width: 38vw;
+}
+#stylesView .aside .comments .new-comment {
+  display: flex;
+  justify-content: space-between;
+}
+#stylesView .aside .comments .new-comment #newComment {
+  padding: 1vw;
+  width: 31vw;
+}
+#stylesView .aside .comments .new-comment input[type=submit] {
+  background: var(--purple);
+  padding: 0 1vw;
+  height: 2vw;
+  margin: 1vw 0 1vw;
+  border-radius: 0.2vw;
+  color: var(--white);
+  cursor: pointer;
+}
+#stylesView .aside .comments .comment-container {
+  max-height: 30vh;
+  height: 30vh;
+  overflow-x: hidden;
+}
+#stylesView .aside .comments .comment-container .comment {
+  padding: 1vw 2vw;
+  background: var(--purple-white);
+  color: var(--black);
+  border-radius: 0.5vw;
+}
+#stylesView .aside .comments .comment-container .comment .header {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  width: 100%;
+}
+#stylesView .aside .comments .comment-container .comment .header img {
+  border-radius: 50%;
+  width: 2.6vw;
+  height: 2.6vw;
+  margin-right: 0.6vw;
+}
+#stylesView .aside .comments .comment-container .comment .header h3 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: var(--black);
+}
+#stylesView .aside .comments .comment-container .comment .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#stylesView .aside .comments .comment-container .comment .body summary {
+  color: var(--title-color);
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+#stylesView .aside .comments .comment-container .comment .body .text, #stylesView .aside .comments .comment-container .comment .body details {
+  max-width: 95%;
+}
+#stylesView .aside .comments .comment-container .comment .body .like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#stylesView .aside .comments .comment-container .comment .body .like svg {
+  width: 2vw;
+  height: 2vw;
+}
+#stylesView .aside .green-idea {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-wrap: wrap;
+  width: 53vw;
+  height: 30vh;
+  margin-bottom: 5vw;
+}
+#stylesView .aside .green-idea .idea-img {
+  width: 18%;
+}
+#stylesView .aside .green-idea .idea-img img {
+  width: 100%;
+}
+#stylesView .aside .green-idea .idea {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  max-width: 57%;
+}
+#stylesView .aside .green-idea .heart {
+  margin-right: 2vw;
 }
 
 /*# sourceMappingURL=home.css.map */

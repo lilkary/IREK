@@ -46,7 +46,7 @@ router.post("/new-user", async (req, res)=> {
 router.get("/", (req, res)=> {
   res.render("portfolio")
 })
-router.get("/home", (req, res)=> {
+router.get("/invitado", (req, res)=> {
   res.render("home")
 })
 

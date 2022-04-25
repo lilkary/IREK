@@ -6,12 +6,12 @@ HTMLElement.prototype.$ = function(q){
   return this.querySelector(q)
 }
 HTMLElement.prototype.$all = function(q){
-  return this.querySelectorAll(q)
+  return Array.from(this.querySelectorAll(q))
 }
 
 
-const Form   = id("new_user")
-const Inputs = Array.from(Form.$all(".input"))
+const Form   = id("login")
+const Inputs = Form.$all(".input")
 
 //Input class change for animation
 const InputAnimation = (input) => {
@@ -57,7 +57,7 @@ const ResErrorValidator = res => {
     setTimeout(() => { //CLose message in 4 seconds
       id("alert_message").classList.remove("open")
     }, 4000);
-    return
+    return true
   }
 
   if(res.err.name){
@@ -72,14 +72,77 @@ const ResErrorValidator = res => {
   if(res.err.edad){
     id("edad_err").textContent = res.err.edad
   }
+  return false
 }
 
+id("switch_form").onclick = ({target: span}) => {
+  
+  const status = span.textContent
+  
+  if(status == "Iniciar sesión"){
+
+    id("form-title").textContent = "Iniciar sesión"
+    id("submit").value           = "Entrar"
+    id("Age").style.display      = "none"
+    id("Name").style.display     = "none"
+    id("action").value           = "/login"
+    span.textContent             = "No tengo cuenta"
+
+  }else{
+
+    id("form-title").textContent = "Regístrate"
+    id("submit").value           = "Regístrarse"
+    span.textContent             = "Iniciar sesión"
+    id("Age").style.display      = ""
+    id("Name").style.display     = ""
+    id("action").value           = "/new-user"
+  }
+}
+
+const ValidateForm = formData => {
+  
+  const Data = formData
+  const errors = {err: {}}
+  const emailRegex = /^\w+([\.\+\-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+
+  if(
+      Data.get("name").length <= 1 
+      && Data.get("action") == "/new-user"
+      ){
+        errors.err.name = "Nombre no valido"
+  }
+
+  if(Data.get("email").length < 1)
+    errors.err.email = "El email no puede estar vacío"
+
+  else if(!emailRegex.test(Data.get("email"))){
+    errors.err.email = "Email no valido"
+  }
+
+  if(Data.get("password").length < 8){
+    errors.err.password = "La contraseña tiene menos de 8 carácteres"
+  }
+
+  if(
+    parseInt(Data.get("edad")) < 13 
+    && Data.get("action") == "/new-user"
+    || Data.get("edad").length < 2
+    && Data.get("action") == "/new-user"
+  ){
+      errors.err.edad = "Edad minima: 13 años"
+  }
+
+  return ResErrorValidator(errors)
+}
 //Database save user
-id("new_user").onsubmit = event => {
+id("login").onsubmit = event => {
   event.preventDefault()
   const Data = new FormData(event.target)
+  const uri  = Data.get("action")
 
-  fetch("/new-user", { //Send data 
+  if(ValidateForm(Data) !== true) return 
+
+  fetch(uri, { //Send data 
     method: "POST",
     body: Data
   })

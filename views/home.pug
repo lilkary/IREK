@@ -24,9 +24,11 @@ html(lang="es")
                     a(href="/#objetivos")
                         span Objetivos
 
-                    a(href="/#new_user")
-                        span Registrate
+                    a(href="/login")
+                        span Login
                         
+                    a(href="/#idea_verde")
+                        span Idea verde
             .description
                 h2 ¿Qué es un estilo?
                 p 
@@ -47,31 +49,138 @@ html(lang="es")
             h2 Estilos 
 
             .container 
-                .style
-                    img(src="https://img.buzzfeed.com/buzzfeed-static/static/2020-03/30/18/campaign_images/a517211205cf/23-so-called-classic-movies-that-people-told-us-t-2-6225-1585593815-14_dblbig.jpg?resize=1200:*")
+                .style#casual
+                    img(src="https://c.pxhere.com/photos/30/5c/man_model_fashion_male_young_people_person_portrait-643924.jpg!d", alt="")
                     .type 
-                        span Clasico
+                        span Casual
 
-                .style
-                    img(src="https://img.buzzfeed.com/buzzfeed-static/static/2020-03/30/18/campaign_images/a517211205cf/23-so-called-classic-movies-that-people-told-us-t-2-6225-1585593815-14_dblbig.jpg?resize=1200:*")
+                .style#clasic
+                    img(src="https://lastendenciasdeyaneth.files.wordpress.com/2018/01/estiloclasico-e1514916149457.jpg?w=1130&h=651&crop=1")
                     .type 
-                        span Clasico
+                        span Clásico
 
-                .style
-                    img(src="https://img.buzzfeed.com/buzzfeed-static/static/2020-03/30/18/campaign_images/a517211205cf/23-so-called-classic-movies-that-people-told-us-t-2-6225-1585593815-14_dblbig.jpg?resize=1200:*")
+                .style#hippie
+                    img(src="https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg")
                     .type 
-                        span Clasico
-                .style
-                    img(src="https://img.buzzfeed.com/buzzfeed-static/static/2020-03/30/18/campaign_images/a517211205cf/23-so-called-classic-movies-that-people-told-us-t-2-6225-1585593815-14_dblbig.jpg?resize=1200:*")
-                    .type 
-                        span Clasico
+                        span Hippie
 
-                .style
-                    img(src="https://img.buzzfeed.com/buzzfeed-static/static/2020-03/30/18/campaign_images/a517211205cf/23-so-called-classic-movies-that-people-told-us-t-2-6225-1585593815-14_dblbig.jpg?resize=1200:*")
-                    .type 
-                        span Clasico
+        
+        .styles_view#stylesView
+            .header 
+                .title 
+                    .back-button#back
+                        svg(
+                            width="31", height="31", viewBox="0 0 31 31",
+                            fill="none", xmlns="http://www.w3.org/2000/svg"
+                            )
+                            path( 
+                                d=`M25.8333 15.5C25.8333 21.1963 21.1962 
+                                25.8333 15.5 25.8333C9.80371 25.8333 5.16662 
+                                21.1963 5.16662 15.5C5.16662 9.80376 9.80371 
+                                5.16668 15.5 5.16668C21.1962 5.16668 25.8333 
+                                9.80376 25.8333 15.5ZM28.4166 15.5C28.4166 8.37001 
+                                22.63 2.58334 15.5 2.58334C8.36996 2.58334 2.58329 
+                                8.37001 2.58329 15.5C2.58329 22.63 8.36996 28.4167 
+                                15.5 28.4167C22.63 28.4167 28.4166 22.63 28.4166 
+                                15.5ZM15.5 16.7917H20.6666V14.2083H15.5V10.3333L10.3333 
+                                15.5L15.5 20.6667L15.5 16.7917Z`
+                                fill="#58526F")
+                    a(href="/") 
+                        h2 iREK 
 
-                .style
-                    img(src="https://img.buzzfeed.com/buzzfeed-static/static/2020-03/30/18/campaign_images/a517211205cf/23-so-called-classic-movies-that-people-told-us-t-2-6225-1585593815-14_dblbig.jpg?resize=1200:*")
-                    .type 
-                        span Clasico
+                nav 
+                    a(href="/#inicio")
+                        span Inicio
+
+                    a(href="/#somos")
+                        span Somos
+
+                    a(href="/#objetivos")
+                        span Objetivos
+
+                    a(href="/login")
+                        span Login
+                        
+                    a(href="/#idea_verde")
+                        span Idea verde
+            .style#style 
+                .img 
+                    img(src="https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg", alt="img")
+                .details 
+                    h2 Style name
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae natus cum fuga ab praesentium in odit voluptates ipsum ipsa deserunt! Minima impedit expedita vero cupiditate voluptatem ut, veritatis natus similique?Dicta quasi alias consectetur asperiores, cumque sunt sint sequi, aut, possimus tenetur deleniti esse eaque soluta corporis. Maxime iusto blanditiis possimus iste? Ad quisquam soluta doloremque suscipit inventore delectus laudantium.Numquam, deleniti voluptas quam itaque recusandae, illo delectus unde cumque accusantium quis optio accusamus fugiat minus inventore similique nihil! Quae, quasi. Quisquam minus autem hic veniam non qui, minima voluptates?Nam porro tempora iste excepturi accusantium soluta a doloremque. Ratione, hic tenetur? Ut voluptatum, quibusdam doloribus vel cumque consequatur velit! Sunt doloribus ex quis voluptates! Deserunt quo a repudiandae veniam!
+
+            .aside 
+                .comments 
+                    .new-comment 
+                        input#newComment(type="text", name="comment", placeholder="Deja un comentario")
+                        input(type="submit", value="Enviar")
+                    .comment-container 
+                        .comment 
+                                .header 
+                                    img(width="40", src="https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg", alt="")
+                                    h3 Lil Kary
+
+                                .body
+                                    .text
+                                        p
+                                            | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae blanditiis dolor optio molestiae
+                                        details
+                                            summary 
+                                                span Más
+                                            
+                                            p 
+                                                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ratione aut et exercitationem incidunt quasi reiciendis corporis iusto. Nemo unde fuga officia labore tempore, debitis reprehenderit eos eaque vitae architecto. atque saepe vel eveniet commodi corrupti? Quaerat dolor voluptatibus maxime et odio eos eaque aliquid ipsum fuga?
+
+                                    .like 
+                                        svg(width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(
+                                                d=`
+                                                    M21.1485 36.7L18.082 34.06C7.1905 24.72 0 18.56
+                                                    0 11C0 4.84 5.11794 0 11.6317 0C15.3115 0 
+                                                    18.8433 1.62 21.1485 4.18C23.4537 1.62 26.9855 
+                                                    0 30.6653 0C37.1791 0 42.297 4.84 42.297 11C42.297 
+                                                    18.56 35.1065 24.72 24.215 34.08L21.1485 36.7Z`
+                                                    fill="#B886DF"
+                                                )
+                                        span.ammount 340k
+                        template 
+                            .comment 
+                                .profile 
+                                    img
+                                    h3 
+
+                                p.text 
+
+                                .like 
+                                    svg(width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(
+                                            d=`
+                                                M21.1485 36.7L18.082 34.06C7.1905 24.72 0 18.56
+                                                0 11C0 4.84 5.11794 0 11.6317 0C15.3115 0 
+                                                18.8433 1.62 21.1485 4.18C23.4537 1.62 26.9855 
+                                                0 30.6653 0C37.1791 0 42.297 4.84 42.297 11C42.297 
+                                                18.56 35.1065 24.72 24.215 34.08L21.1485 36.7Z`
+                                                fill="#B886DF"
+                                            )
+
+                .green-idea
+                    .idea-img 
+                        img(src="/img/luz-verde.svg", alt="green idea svg")
+
+                    .idea 
+                        p No tires basura en la calle y en drenajes.
+
+                    .heart
+                        svg(width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(
+                                d=`
+                                    M21.1485 36.7L18.082 34.06C7.1905 24.72 0 18.56
+                                    0 11C0 4.84 5.11794 0 11.6317 0C15.3115 0 
+                                    18.8433 1.62 21.1485 4.18C23.4537 1.62 26.9855 
+                                    0 30.6653 0C37.1791 0 42.297 4.84 42.297 11C42.297 
+                                    18.56 35.1065 24.72 24.215 34.08L21.1485 36.7Z`
+                                    fill="#CBDBBB"
+                                )
+
+    script(src="/js/home.js") 

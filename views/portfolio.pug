@@ -26,7 +26,7 @@ html(lang="es")
                 a(href="#objetivos")
                     span Objetivos 
 
-                a(href="#new_user")
+                a(href="#login")
                     span Login
 
 
@@ -113,10 +113,10 @@ html(lang="es")
                         img( src="./img/twitter.svg", alt="twitter logo svg pixabay")
                         span @GuevaraCommm
 
-            form#new_user( autocomplete="off")
-                h2 Registrate 
+            form#login( autocomplete="off")
+                h2#form-title Iniciar sesión 
 
-                .input
+                .input#Name(style="display: none")
                     label(for="name")
                         span Nombre 
 
@@ -124,7 +124,7 @@ html(lang="es")
                     p#name_err.message-err
                 
 
-                .input
+                .input#Email
                     label(for="email")
                         span Email
 
@@ -132,25 +132,28 @@ html(lang="es")
                     p#email_err.message-err
                 
 
-                .input
+                .input#Pass
                     label(for="password")
                         span Contraseña
 
                     input(tpye="password", name="password")#password
-                    p#password_err.message_err                
+                    p#password_err.message-err                
 
-                .input
+                .input#Age(style="display: none")
                     label(for="edad")
                         span Edad
 
                     input(type="number", name="edad")#edad
                     p#edad_err.message-err
                 
-                input( type="submit", value="Registrarse")
+                input( type="submit", value="Entrar")#submit
+                input#action(type="hidden", name="action", value="/login")
+                .notaccount
+                        span#switch_form No tengo cuenta
 
-                div
-                    a( href="/home")
-                        spam No tengo cuenta
+                .notaccount.a
+                    a(href="/invitado") 
+                        span Entrar como invitado
                
             .idea
                 img( src="./img/idea.svg" alt="idea irek")
@@ -159,5 +162,6 @@ html(lang="es")
                         |Puedes enviarla a 
                         br
                         span( class="email") karengama23181108@gmail.com
-
             .space
+
+    script(src="/js/main.js") 
