@@ -166,7 +166,6 @@ header .description p {
 #stylesView .header .title a {
   text-decoration: none;
   color: var(--black);
-  font-size: 1.2vw;
 }
 #stylesView .header .title a h2 {
   font-weight: normal;
@@ -180,6 +179,7 @@ header .description p {
 #stylesView .header nav a {
   color: var(--black);
   margin: 0 1vw;
+  font-size: 1.2vw;
 }
 #stylesView .style {
   display: flex;
