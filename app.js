@@ -1,7 +1,6 @@
 const express  = require("express")
 const mongoose = require("mongoose")
 const multer   = require("multer")
-const bcrypt   = require("bcryptjs")
 const router = require("./router/router")
 const PORT     = process.env.PORT || 3000
 const app      = express()
