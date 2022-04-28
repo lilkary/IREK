@@ -166,9 +166,80 @@ const styles = {
       El peinado hipster en un homnre suele ser largo y ondulado, acompañado
       por una barba.
     `
+  },
+  gotico:{
+    title: "Gotico", 
+    text:  `
+    Si tu vida es muy colorida te invito a que cheques los siguientes estilos,
+     queremos que sigas con tu brillo, no dejemos caer esto que te hace fuerte,
+     tú tienes todo, el estilo colorido es algo que puedes usar como brillo 
+     para compartir, todo esto para tu comodidad.
+     Este estilo no tiene género y no debería tenerlo, necesitas tenerlo porque
+     este estilo es algo maravillo.
+     Este es para todo tu closet:
+     -Camisa colorida 
+     -Vestido colorido con flores
+     -Vestido v color verde con un poco de rayitos de color amarillo
+     La importancia de esto es seguir con tu seguridad al vestirte y que sepan 
+     que es genial. Debemos ponernos a pensar en el planeta, en usar cosas
+     biodegradables y favorables para el cuidado del planeta.
+     Si tienes sugerencia, hazlas saber para agregar esto en la página y 
+     seguir con el mejoramiento de este. 
+    `
+  },
+  callejero:{
+    title: "Callejero", 
+    text:  `
+     No tiene genero solo es cuestión de tu forma tan creativa de ser.
+     Todos debes entender que este estilo es único, ya que demuestra quine eres 
+     y que te gusta hacer. Se basa en el uso de cazadoras tipo bomber, vaqueros
+     rotos y camisetas con estampados divertidos dentro de una combinación 
+     lógica. Complementos como las bufandas y chalecos también hacen gala en 
+     este estilo. No todos los que apuestan por este look se ven iguales.
+     También debemos decirte que no tienes por qué aferrarte al negro. 
+     Hay otros colores tan oscuros que lo pueden sustituir. Eso sí, sigue
+     siempre esta regla si usas pantalón oscuro que la parte de arriba sea 
+     clara o viceversa.  Si eliges esta opción, apuesta siempre por piezas de
+     colores opuestos en el círculo cromático.
+     Actúa. Cada una de tus acciones impacta negativa o positivamente
+     nuestros ecosistemas no importa lo pequeña que sea. 
+     Todo está bien mientras cumplas con ayudar.
+    `
+  },
+  dark:{
+    title: "Dark", 
+    text:  `
+     El estilo más cósmico!!!!
+     El estilo es algo  que surgió debido a una moda puesta y divulgada  por
+     una serie vista tv. Sin duda este estilo es parecido al estilo emo pero 
+     en el cual es más gótico.
+     Las prendas superiores e inferiores desgastadas o rotas son uno de los 
+     estilos que se usan más frecuentemente en casi todas las subculturas 
+     góticas. Busca jeans o shorts de mezclilla con roturas en las piernas o 
+     unos tops con rasgaduras en todo el cuerpo o los bordes deshilachados.
+     Sin duda un aspecto que muchos admiran y necesitan.
+     Los darks (También llamados darkies o darketos) son algo parecido a
+     los góticos aunque su forma de vestir es un tanto más minimalista; 
+     no se permite ningún tipo de variación de colores en la vestimenta, 
+     solo el color negro.
+    `
+  },
+  emo:{
+    title: "Emo", 
+    text:  `
+     Son una generación vestida por la infelicidad, por música y letras 
+     depresivas y por la profunda necesidad de sentir emociones, de saltar
+     del plano racional a las sensaciones. 
+     Es cierto que se su especialidad es estar vestidos de negro, con
+     prendas radicalmente abiertas y no se cubren de otro color.
+     Las prendas varían y sobre todo son creativas, lo que necesita es
+     negro no importa la prenda sino el color, nada cambia su derecho
+     como persona y son un poco extrovertidos, eso debidamente a lo analizado.
+
+    `
   }
-
-
+    
+  
 }
 setStyleView = (data) => {
   const style = id("style")
