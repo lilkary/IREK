@@ -98,8 +98,8 @@ const styles = {
     img:"https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg"
   },
    
-  casual:{
-    title: "Casual", 
+  punk:{
+    title: "Punk", 
     text:  `
      Estilo que surge para dejar darle vida al color negro.
      El estilo punk surgío en los años 70 en Inglaterra, comenzando como un 
@@ -123,7 +123,51 @@ const styles = {
      solamente una franja de cabellos al centro.
      `,
      img:"https://pixabay.com/es/photos/retrato-personas-mujer-uno-3036880/.jpeg"
+  },
+  gotico:{
+    title: "Gotico", 
+    text:  `
+    Un estilo mas a base del color negro, basado al punk, deathrock 
+    y personajes de peliculas de terror.
+    El estilo gotico surgío en Europa occidental, desde mediados del siglo XII,
+    pero fue hasta es siglo XVI que tuvo entrda para pervivir mas tiempo.
+    Pendras que no deben faltar en un armario gotico:
+    -Pantalones de cuero
+    -Minifaldas
+    -Chaquetas
+    -Cadenas
+    -Anillos
+    -Botas
+    Recuerda que su estetica se centra en base al color negro, mas se pueden
+    agregar tonos como morado o rojo.
+    Para el mquillaje, es recomendado usar sombras oscuras o negro, deineados
+    grandes y gruesos; y para los labios pueden jugar con el color de los 
+    labios, usando solores oscuros pero contrarios a la sombra de ojos.
+    Para el peinado suelen usarse el carcado, peinado con aspecto desordenado 
+    espeso y abundante.
+    `
+  },
+  hipster:{
+    title: "Hipster", 
+    text:  `
+      Personas jovenes con gustos musicales alternativos, gusto por deportes
+      urbanos, con un sentido íronico de moda.
+      Su origen fue en la decada de los 40del siglo XX.
+      En el armario de un hipster no debe faltar:
+      -Camisas basícas
+      -Prendas de color
+      -Converse
+      -Bufandas
+      -Bolsa bandolera
+      -Sombreros
+      -Gorros
+      -Pantalones pitillo  
+      Su maquillaje suele ser sencillo y poco cargado, con rimen y gloss basta.
+      El peinado hipster en un homnre suele ser largo y ondulado, acompañado
+      por una barba.
+    `
   }
+
 
 }
 setStyleView = (data) => {
