@@ -96,7 +96,35 @@ const styles = {
       Y para el peinado el cabello es largo tanto en hombre como en mujer, como accesorio una diadema de manera horizontal sobre la frente o también puedes considerar hacerte rastras.
     `,
     img:"https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg"
+  },
+   
+  casual:{
+    title: "Casual", 
+    text:  `
+     Estilo que surge para dejar darle vida al color negro.
+     El estilo punk surgío en los años 70 en Inglaterra, comenzando como un 
+     movimiento musical, tras la rebelion del rock industrial.
+     Dicha revelión contaba en su mayoria con etras de protesta al anarquismo,
+     autogestion y en contra de la religión.
+     Estas son las prenda ue no deben faltar en tu armario base al punk:
+     -Chaqueta vaquera
+     -Camisa desgastada
+     -Chaqueta de cuero
+     -Pantalones pitillo 
+     -Botas
+     Recuerda que todo en base al color negro, tambien buscando una vista
+     desgastada en sus prendas.
+     Como accesorios, las cadenas, aretes, tirantes y corbatas son la mejor 
+     opción.
+     En el maquillaje debe resaltar un delineado gureso, que de 
+     protagonismo a los ojos, creando dramatismo en la mirada.
+     Para un buen peinado, en su mayoria se observa el corte mohawk, 
+     corte  que se basa en rapar ambos lados de la cabeza, dejando
+     solamente una franja de cabellos al centro.
+     `,
+     img:"https://pixabay.com/es/photos/retrato-personas-mujer-uno-3036880/.jpeg"
   }
+
 }
 setStyleView = (data) => {
   const style = id("style")
