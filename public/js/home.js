@@ -237,7 +237,27 @@ const styles = {
      como persona y son un poco extrovertidos, eso debidamente a lo analizado.
 
     `
-  }
+  },
+  Indiekid:{
+    title: "Indie Kid", 
+    text:  `
+     Estilo moderno que engloba generos muiscales, cinematograficos y moda
+     que poseen grandes masas, por ellos pertenecen a un genero indepentiente.
+     La cultura Indie poseee cierta similitud con la hipster, ya que quienes se
+     apropian de dicos estilo en su amyoria son jovenes, que rechazan
+    cualquier tendencia en busca de su estilo propio.
+    Ser indie significa ser independiente. Como consejos:Evita la ropa de marca
+    y tiendas comerciales, vuelve  a lo antigua, lo temporal siempre es 
+    tendencia, convina cuantos estilos gustes, eres libre de elegir lo que mas 
+    te guste, dale vida a tu estilo con joyas y accesorios.
+    Si asi deseas, opta por hacer tu pripia ropa, se ecologio.
+    Deja que tu cabello tenga vida propia.
+    De calzado puedes usar cualquier tenis a tu comodidad (como converse).
+    Pero lo mas importante es no olvidar que debes ser tu mismo.
+
+
+    `
+  }, 
     
   
 }
