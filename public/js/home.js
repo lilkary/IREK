@@ -254,10 +254,25 @@ const styles = {
     Deja que tu cabello tenga vida propia.
     De calzado puedes usar cualquier tenis a tu comodidad (como converse).
     Pero lo mas importante es no olvidar que debes ser tu mismo.
-
-
     `
   }, 
+  Aesthetic:{
+    title: "Aesthetic Cungre", 
+    text:  `
+    El principio de esta estetica inicio con un movimiento contracultural
+     y fue popularizaa por bandas como Nirvana, Pearl Jam, etc.
+     La moda evoluciona a lo largo del tiempo, hay una tendencia que no ha
+     pasado desapercibida. el estilo aesthetic. La base de este
+     nuevo movimiento hace referencia a todo estilo, natural, de arte
+     yu gusto por todo lo que es bello  a primera vista.
+     Este estilo surgio de un movimiento Tumblr, donde se empezo a mesclar 
+     el estilo grunge, gotico, y deportivo, con estetica de los 80 y 90.
+      Cungre es un estilo oscuro y vanguardista.Se basa a estampados de 
+      cuadros, medias de red, cadenas, botas de estilo militar, etc.
+      En cuetion de colores, los tonos frios como los grises o 
+      blanco son imprescinibles para un look cungre.
+    `
+  }
     
   
 }
