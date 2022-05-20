@@ -122,10 +122,10 @@ const styles = {
      corte  que se basa en rapar ambos lados de la cabeza, dejando
      solamente una franja de cabellos al centro.
      `,
-     img:"https://pixabay.com/es/photos/retrato-personas-mujer-uno-3036880/.jpeg"
+     img:"/img/model-1645826_1920.jpg"
   },
   gotico:{
-    title: "Gotico", 
+    title: "Gotico",
     text:  `
     Un estilo mas a base del color negro, basado al punk, deathrock 
     y personajes de peliculas de terror.
@@ -145,7 +145,8 @@ const styles = {
     labios, usando solores oscuros pero contrarios a la sombra de ojos.
     Para el peinado suelen usarse el carcado, peinado con aspecto desordenado 
     espeso y abundante.
-    `
+    `,
+    img: "/img/gothic-2306457_1920.jpg"
   },
   hipster:{
     title: "Hipster", 
@@ -165,10 +166,11 @@ const styles = {
       Su maquillaje suele ser sencillo y poco cargado, con rimen y gloss basta.
       El peinado hipster en un homnre suele ser largo y ondulado, acompañado
       por una barba.
-    `
+    `,
+    img: "/img/legs-407196_1920.jpg"
   },
-  gotico:{
-    title: "Gotico", 
+  exotico:{
+    title: "exotico", 
     text:  `
     Si tu vida es muy colorida te invito a que cheques los siguientes estilos,
      queremos que sigas con tu brillo, no dejemos caer esto que te hace fuerte,
@@ -185,7 +187,8 @@ const styles = {
      biodegradables y favorables para el cuidado del planeta.
      Si tienes sugerencia, hazlas saber para agregar esto en la página y 
      seguir con el mejoramiento de este. 
-    `
+    `,
+    img: "/img/woman-3260943_1920.jpg"
   },
   callejero:{
     title: "Callejero", 
@@ -204,7 +207,8 @@ const styles = {
      Actúa. Cada una de tus acciones impacta negativa o positivamente
      nuestros ecosistemas no importa lo pequeña que sea. 
      Todo está bien mientras cumplas con ayudar.
-    `
+    `,
+    img: "/img/girl-5688120_1920.jpg"
   },
   dark:{
     title: "Dark", 
@@ -222,7 +226,8 @@ const styles = {
      los góticos aunque su forma de vestir es un tanto más minimalista; 
      no se permite ningún tipo de variación de colores en la vestimenta, 
      solo el color negro.
-    `
+    `,
+    img: "/img/punk-4047652_1920.jpg"
   },
   emo:{
     title: "Emo", 
@@ -236,7 +241,8 @@ const styles = {
      negro no importa la prenda sino el color, nada cambia su derecho
      como persona y son un poco extrovertidos, eso debidamente a lo analizado.
 
-    `
+    `,
+    img: "/img/girl-5706745_1920.jpg"
   },
   Indiekid:{
     title: "Indie Kid", 
