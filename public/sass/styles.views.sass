@@ -1,5 +1,5 @@
 #stylesView
-    position: absolute
+    position: fixed
     transition: .5s
     top: 0
     left: -120vw
@@ -54,7 +54,10 @@
         justify-content: space-between
         margin: 2vw 1.4vw
 
-        .img img
+        .img
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center
             width: 38vw
             height: 45vh
             border-radius: .5vw
@@ -99,14 +102,16 @@
 
             .comment-container
                 max-height: 30vh
-                height: 30vh
+                height: 26vh
                 overflow-x: hidden
+                padding-bottom: 100px
 
                 .comment
                     padding: 1vw 2vw
                     background: var(--purple-white)
                     color: var(--black)
                     border-radius: .5vw
+                    
                     .header
                         display: flex
                         justify-content: start

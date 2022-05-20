@@ -18,14 +18,11 @@ html(lang="es")
                     a(href="/#inicio")
                         span Inicio
 
-                    a(href="/#somos")
-                        span Somos
+                    a(href="") 
+                     span=userName
 
-                    a(href="/#objetivos")
-                        span Objetivos
-
-                    a(href="/login")
-                        span Login
+                    a(href="/logout")
+                        span salir
                         
                     a(href="/#idea_verde")
                         span Idea verde
@@ -50,55 +47,50 @@ html(lang="es")
             
             .container 
             
-                .style#casual
-                    img(src="https://c.pxhere.com/photos/30/5c/man_model_fashion_male_young_people_person_portrait-643924.jpg!d", alt="")
+                .style#casual(style="background-image: url(/img/estilos/chica_casual.jpg)")
                     .type 
                         span Casual
 
-                .style#clasic
-                    img(src="https://lastendenciasdeyaneth.files.wordpress.com/2018/01/estiloclasico-e1514916149457.jpg?w=1130&h=651&crop=1")
+                .style#clasic(style="background-image: url(https://lastendenciasdeyaneth.files.wordpress.com/2018/01/estiloclasico-e1514916149457.jpg?w=1130&h=651&crop=1)")
                     .type 
                         span Clásico
 
-                .style#hippie
-                    img(src="https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg")
+                .style#hippie(style="background-image: url(https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg)")
                     .type 
                         span Hippie
-                .style#punk 
-                    img(src="/img/model-1645826_1920.jpg")
+
+                .style#punk(style="background-image: url(/img/estilos/chica_punk.jpg)") 
                     .type 
                         span Punk
-                .style#gotico
-                    img(src="/img/gothic-2306457_1920.jpg")
+
+                .style#gotico(style="background-image: url(/img/estilos/chica_gotica.jpg)")
                     .type 
-                        span Gotico 
-                .style#hipster 
-                    img(src="/img/legs-407196_1920.jpg")
+                        span Gotico
+
+                .style#hipster(style="background-image: url(/img/estilos/chica_hipster.jpg)") 
                     .type 
                         span Hipster
-                .style#exotico 
-                    img(src="/img/woman-3260943_1920.jpg")
+
+                .style#exotico(style="background-image: url(/img/estilos/chica_estilo_exotica.jpg)") 
                     .type 
                         span Exotico
-                .style#callejero 
-                    img(src="/img/girl-5688120_1920.jpg")
+
+                .style#callejero(style="background-image: url(/img/estilos/chica_estilo_callejero.jpg)") 
                     .type 
                         span Callejero 
 
-                .style#dark 
-                    img(src="/img/punk-4047652_1920.jpg")
+                .style#dark(style="background-image: url(/img/estilos/chica_estilo_dark.jpg)") 
                     .type 
                         span Dark 
-                .style#emo 
-                    img(src="/img/girl-5706745_1920.jpg")
+
+                .style#emo(style="background-image: url(/img/estilos/chica_emo.jpg)") 
                     .type 
                         span Emo 
-                .style#Indiekid 
-                    img(src="")
+
+                .style#Indiekid(style="background-image: url(/img/estilos/chica_indie_kit.jpeg)") 
                     .type 
                         span IndieKid
-                .style#Aesthetic 
-                    img(src="")
+                .style#Aesthetic(style="background-image: url(/img/estilos/aesthetic.jpeg)") 
                     .type 
                         span aesthetic
 
@@ -135,59 +127,38 @@ html(lang="es")
                     a(href="/#objetivos")
                         span Objetivos
 
-                    a(href="/login")
-                        span Login
+                    a(href="")
+                        span=userName
                         
                     a(href="/#idea_verde")
                         span Idea verde
             .style#style 
-                .img 
-                    img(src="https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg", alt="img")
+                .img
                 .details 
                     h2 Style name
                     p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae natus cum fuga ab praesentium in odit voluptates ipsum ipsa deserunt! Minima impedit expedita vero cupiditate voluptatem ut, veritatis natus similique?Dicta quasi alias consectetur asperiores, cumque sunt sint sequi, aut, possimus tenetur deleniti esse eaque soluta corporis. Maxime iusto blanditiis possimus iste? Ad quisquam soluta doloremque suscipit inventore delectus laudantium.Numquam, deleniti voluptas quam itaque recusandae, illo delectus unde cumque accusantium quis optio accusamus fugiat minus inventore similique nihil! Quae, quasi. Quisquam minus autem hic veniam non qui, minima voluptates?Nam porro tempora iste excepturi accusantium soluta a doloremque. Ratione, hic tenetur? Ut voluptatum, quibusdam doloribus vel cumque consequatur velit! Sunt doloribus ex quis voluptates! Deserunt quo a repudiandae veniam!
 
             .aside 
                 .comments 
-                    .new-comment 
-                        input#newComment(type="text", name="comment", placeholder="Deja un comentario")
-                        input(type="submit", value="Enviar")
-                    .comment-container 
+                    .new-comment
+                        input#new_comment(type="text", name="comment", placeholder="Deja un comentario")
+                        input(type="submit", value="Enviar")#send_comment
+                    .comment-container#comment_container
                         .comment 
-                                .header 
-                                    img(width="40", src="https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg", alt="")
-                                    h3 Lil Kary
+                            .header 
+                                img(width="40", src="https://cdn.pixabay.com/photo/2015/07/13/02/52/girl-842719_960_720.jpg", alt="")
+                                h3 Lil Kary
 
-                                .body
-                                    .text
-                                        p
-                                            | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae blanditiis dolor optio molestiae
-                                        details
-                                            summary 
-                                                span Más
-                                            
-                                            p 
-                                                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ratione aut et exercitationem incidunt quasi reiciendis corporis iusto. Nemo unde fuga officia labore tempore, debitis reprehenderit eos eaque vitae architecto. atque saepe vel eveniet commodi corrupti? Quaerat dolor voluptatibus maxime et odio eos eaque aliquid ipsum fuga?
-
-                                    .like 
-                                        svg(width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg")
-                                            path(
-                                                d=`
-                                                    M21.1485 36.7L18.082 34.06C7.1905 24.72 0 18.56
-                                                    0 11C0 4.84 5.11794 0 11.6317 0C15.3115 0 
-                                                    18.8433 1.62 21.1485 4.18C23.4537 1.62 26.9855 
-                                                    0 30.6653 0C37.1791 0 42.297 4.84 42.297 11C42.297 
-                                                    18.56 35.1065 24.72 24.215 34.08L21.1485 36.7Z`
-                                                    fill="#B886DF"
-                                                )
-                                        span.ammount 340k
-                        template 
-                            .comment 
-                                .profile 
-                                    img
-                                    h3 
-
-                                p.text 
+                            .body
+                                .text
+                                    p
+                                        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae blanditiis dolor optio molestiae
+                                    details
+                                        summary 
+                                            span Más
+                                        
+                                        p 
+                                            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ratione aut et exercitationem incidunt quasi reiciendis corporis iusto. Nemo unde fuga officia labore tempore, debitis reprehenderit eos eaque vitae architecto. atque saepe vel eveniet commodi corrupti? Quaerat dolor voluptatibus maxime et odio eos eaque aliquid ipsum fuga?
 
                                 .like 
                                     svg(width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg")
@@ -200,13 +171,28 @@ html(lang="es")
                                                 18.56 35.1065 24.72 24.215 34.08L21.1485 36.7Z`
                                                 fill="#B886DF"
                                             )
-                .style#gotico
-                .green-idea
-                    .idea-img 
-                        img(src="/img/luz-verde.svg", alt="green idea svg")
-                    .idea 
-                        p No tires basura en la calle y en drenajes.
-                .style#emo
+                                    span.ammount 340k
+                    template#template_comment
+                            .comment 
+                                .header 
+                                    img
+                                    h3.user_name
+
+                                .body
+                                  .text 
+                                  .like 
+                                      svg(width="43" height="37" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                          path(
+                                              d=`
+                                                  M21.1485 36.7L18.082 34.06C7.1905 24.72 0 18.56
+                                                  0 11C0 4.84 5.11794 0 11.6317 0C15.3115 0 
+                                                  18.8433 1.62 21.1485 4.18C23.4537 1.62 26.9855 
+                                                  0 30.6653 0C37.1791 0 42.297 4.84 42.297 11C42.297 
+                                                  18.56 35.1065 24.72 24.215 34.08L21.1485 36.7Z`
+                                                  fill="#B886DF"
+                                              )
+                                      span.ammount
+                
                 .green-idea
                     .idea-img 
                         img(src="/img/luz-verde.svg", alt="green idea svg")

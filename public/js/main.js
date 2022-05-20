@@ -49,6 +49,12 @@ const ResErrorValidator = res => {
     span.textContent = ''
   })
 
+  if(res.redirect){
+
+    location.href = res.redirect
+    return true
+  }
+  
   if(res.message){
 
     id("alert_message").$("span").innerHTML = res.message //Write message in the alert
@@ -132,8 +138,12 @@ const ValidateForm = formData => {
       errors.err.edad = "Edad minima: 13 años"
   }
 
+  if(Object.keys(errors.err).length < 1){
+    return true
+  }
   return ResErrorValidator(errors)
 }
+
 //Database save user
 id("login").onsubmit = event => {
   event.preventDefault()
