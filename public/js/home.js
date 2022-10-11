@@ -1,6 +1,8 @@
 const id = Id => document.getElementById(Id)
 const $  = Q  => document.querySelector(Q)
 const $all  = Q  => document.querySelectorAll(Q)
+const template = id("template_comment")
+let lastStyle = ""
 
 HTMLElement.prototype.$ = function(q){
   return this.querySelector(q)
@@ -9,6 +11,44 @@ HTMLElement.prototype.$all = function(q){
   return Array.from(this.querySelectorAll(q))
 }
 
+const printComment = (comment) => {
+  const commentText = comment.comment.split(" ")
+    const commentNode = document.importNode(template.content, true)
+    const likeAmount = commentNode.querySelector(".ammount")
+    commentNode.querySelector("img").src = comment.user_image
+    commentNode.querySelector(".user_name").innerText = comment.user_name 
+    commentNode.querySelector(".ammount").textContent = comment.like_ammount.length -1 
+    commentNode.querySelector(".like").onclick = async () => {
+      if(location.href.includes("/app")){
+
+        const newLikeAmount = await (await fetch(`/app/commets-likes/${comment._id}`)).text()
+        likeAmount.textContent = newLikeAmount
+      }else{
+        location.href = "/#login"
+      }
+    }
+
+    if(commentText.lenght > 60){
+      const visibleText = document.createTextNode(commentText.slice(0, 60).join(" "))
+      const details = document.createElement("DETAILS")
+      const summary = document.createElement("SUMMARY")
+      const summaryText = document.createElement("SPAN")
+      const hiddenText = document.createElement("P")
+
+      summaryText.textContent = "Ver más"
+      summary.appendChild(summaryText)
+
+      hiddenText.textContent = commentText.slice(60).join(" ")
+      details.appendChild(summary)
+      details.appendChild(hiddenText)
+
+      commentNode.querySelector(".text").appendChild(visibleText)
+      commentNode.querySelector(".text").appendChild(details)
+    }else{
+      commentNode.querySelector(".text").textContent = comment.comment
+    }
+    id("comment_container").appendChild(commentNode)
+}
 
 const styles = {
   clasic: {
@@ -284,11 +324,42 @@ const styles = {
     
   
 }
-setStyleView = (data) => {
+
+setStyleView = async (data, background, __id) => {
   const style = id("style")
-  style.$("img").src        = data.img
+  style.$(".img").style.backgroundImage = background
   style.$("h2").textContent = data.title
   style.$("p").textContent  = data.text
+  id("comment_container").innerHTML = ""
+  //Print comments
+  const comments = await (await fetch(`/comments/${__id}`)).json()
+  comments.forEach(printComment)
+}
+
+const addComent = async () => {
+
+  if(!location.href.includes("/app")){
+    location.href = "/#login"
+    return
+  }
+
+  const comment = id("new_comment").value
+  const body = JSON.stringify({comment, style: lastStyle})
+
+  const commentSend =  await ( await fetch("/app/new-comment", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body
+  })).json()
+  printComment(commentSend)
+  id("new_comment").value = ""
+}
+//Add comment
+id("send_comment").onclick = addComent
+id("new_comment").onkeyup = (e) => {
+  if(e.key == "Enter"){
+    addComent()
+  }
 }
 
 const stylesContainer = $(".styles_container .container ")
@@ -302,6 +373,23 @@ stylesContainer.$all(".style").forEach(style => {
   style.onclick = () => {
 
     id("stylesView").classList.add("open")
-    setStyleView(styles[style.id])
+    lastStyle = style.id
+    setStyleView(styles[style.id], style.style.backgroundImage, style.id)
+    history.pushState(null, "", style.id)
   }
+})
+
+window.addEventListener("popstate", () => {
+
+  if(location.href.includes("invitado") || location.href.includes("home")){
+    id("stylesView").classList.remove("open")
+    return
+  }
+  console.log("AAAAAAAAA")
+  const endUri = location.href.split("/").pop()
+  const endWithoutHash = endUri.split("#")[0]
+  const style = id(endWithoutHash)
+  console.log(style)
+  setStyleView(styles[style.id], style.style.backgroundImage, style.id)
+  
 })

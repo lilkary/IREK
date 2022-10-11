@@ -99,8 +99,10 @@ header .description p {
 }
 .styles_container .container .style {
   width: 12.4vw;
-  height: 15vw;
+  height: 20vw;
   background: gray;
+  background-size: cover;
+  background-position: center;
   border-radius: 0.6vw;
   box-shadow: 0px 1px 7px var(--shadow);
   position: relative;
@@ -128,7 +130,7 @@ header .description p {
 }
 
 #stylesView {
-  position: absolute;
+  position: fixed;
   transition: 0.5s;
   top: 0;
   left: -120vw;
@@ -186,7 +188,10 @@ header .description p {
   justify-content: space-between;
   margin: 2vw 1.4vw;
 }
-#stylesView .style .img img {
+#stylesView .style .img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 38vw;
   height: 45vh;
   border-radius: 0.5vw;
@@ -234,8 +239,9 @@ header .description p {
 }
 #stylesView .aside .comments .comment-container {
   max-height: 30vh;
-  height: 30vh;
+  height: 26vh;
   overflow-x: hidden;
+  padding-bottom: 100px;
 }
 #stylesView .aside .comments .comment-container .comment {
   padding: 1vw 2vw;
