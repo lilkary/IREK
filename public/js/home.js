@@ -260,7 +260,8 @@ const styles = {
     Deja que tu cabello tenga vida propia.
     De calzado puedes usar cualquier tenis a tu comodidad (como converse).
     Pero lo mas importante es no olvidar que debes ser tu mismo.
-    `
+    `,
+    img: "/img/kid.jpeg"
   }, 
   Aesthetic:{
     title: "Aesthetic Cungre", 
@@ -277,7 +278,8 @@ const styles = {
       cuadros, medias de red, cadenas, botas de estilo militar, etc.
       En cuetion de colores, los tonos frios como los grises o 
       blanco son imprescinibles para un look cungre.
-    `
+    `,
+    img: "/img/aest.jpeg"
   }
     
   
