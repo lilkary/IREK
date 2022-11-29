@@ -9,7 +9,8 @@ const Users = new Schema({
   },
   password : String, 
   edad     : String,
-  profile_photo: String
+  profile_photo: String,
+  role: String,
 })
 
 module.exports = model("users", Users)

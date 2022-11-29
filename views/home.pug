@@ -18,8 +18,12 @@ html(lang="es")
                     a(href="/#inicio")
                         span Inicio
 
-                    a(href="") 
-                     span=userName
+                    if role
+                        a(href="/app/admin") 
+                            span=userName
+                    else 
+                        a(href="/") 
+                            span=userName
 
                     a(href="/logout")
                         span salir
