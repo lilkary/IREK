@@ -318,7 +318,63 @@ const styles = {
       En cuetion de colores, los tonos frios como los grises o 
       blanco son imprescinibles para un look cungre.
     `
+  }, 
+  Boho:{
+    title: "Boho", 
+    text:  `
+    Estilo romántico, comodo y original. Se presenta 
+    como un estilo muy personal, creativo y relajado,
+     este estilo apuesta por diseños fluidos, colores y
+      accesorios sencillos que nos trasladan a la naturaleza.
+    Boho se puso a la moda desde los 60 hasta los principios
+     de los 70 y a pesar de no ser tan visto ya, hoy en día 
+     resaltan derivantes como "Boho chic" y "hippie chic".
+    Para alguien que su estilo es el boho en su armario no 
+    deben faltar prendas de hilo, tejido vaquero o crochet, 
+    cortes fluidos y largos, prendas con toques campesinos, 
+    accesorios como sombreros y bolsas; todo esto con el fin 
+    de dar un look libre a su espíritu.
+    Juegan con paletas de colores marrones y tostados.
+    Y para su cabello usan peinados desordenados como trenzas,
+     cabello ondulado y moños "Messy".
+    `
+  }, 
+  Egirl:{
+    title: "Egirl/boy", 
+    text:  `
+    Comunidad de adolescentes que cumplen con una estética grunge.
+    Esta tendencia de moda surge en  tiktok, dandose a conocer primero 
+    el estilo de las chicas, más a pesar de esto comparten 
+    rasgos con los e-boys por ejemplo el amor a los videojuegos.
+    Una chica dentro de este estilo viste a falda plisada, pantalón 
+    de tiro alto, playera de manga larga, sudaderas holgadas, crop 
+    top y tennis; mientras que los chicos usan vaqueros, sudaderas 
+    y cadenas colgando ambos siempre dentro de una paleta de colores 
+    blanco negro.
+    En los chicos es común ver las uñas de negro, cabello despeinado
+     y un estilo despreocupado,  las chicas llevan pelo suelto, 
+     en su mayoría cortes de moda.
+    `
+  }, 
+  ArtHoe:{
+    title: "Art Hoe", 
+    text:  `
+    Un estilo que va de la mano con la creatividad, 
+    surgío en 2015 y fue creado para romper estereotipos 
+    de genro, raciales y de clase. 
+    Quienes forman parte de este estilosuelen ser 
+    amantes del arte, son creativos, les gusta leer y 
+    disfrutan de escribir.
+    Suelen usar ropa comoda, pans, overoles, blusas flojas, 
+    en su mayoria ropa con estampados y llena de vida.
+    En su armaria no pueden faltar los momjeans, ya que con ellos
+    expresan su creatividad y libertad, ademas de que son 
+    sencillos de cambiar y combinar.
+    Las prendas a rayas les encantan, así como los converse, las camaras,
+    bolsos y más.
+    `
   }
+    
     
   
 }
