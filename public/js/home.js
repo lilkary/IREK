@@ -373,6 +373,50 @@ const styles = {
     Las prendas a rayas les encantan, así como los converse, las camaras,
     bolsos y más.
     `
+  }, 
+  Urbanic:{
+    title: "Urbanic", 
+    text:  `
+    Estilo que persigue la modernidad y el caracter urbanita.
+    Este estilo toma base de otro estilo tendencia de los 90, el 
+    urbanic chic nos traslada a la segunda decada del siglo XXI.
+    Algunos ejemplos de las mejores prendas para vestir conforme
+    al urbanic chic sería los mini vestidos, pantalones
+    anchos, camisas blancas, tacones, gafas de sol, estampados alegres,
+    a rayas o/y tonos blancos.
+    ¡Urbanic Chic es lo comodo, util, sencillo y actual!
+    `
+  }, 
+  mini:{
+    title: "Minimalista", 
+    text:  `
+    Tejidos, cortes sencillos y colores neutros es la base perfecta para 
+    aplicar en nuestras vidas el estilo minimalista.
+    Estilo el cúal comienza a destacar en los 90, busca un estilo sobrio,
+    elegante y sencillo. El estilo minimalista esta lejos de ser un 
+    estilo aburrido, se basa a las ñíneas rectas y figuras 
+    geometricas convirtiendose en un total arte.
+    Sus prendas basicas son los trajes (a pantalón y chaqueta), jeans rectos,
+    faldas rectas, gabardinas, zapatillas deportivas, zapatos de salón,
+    botas al tobillo y como accesorios ten presente siempr la frase:
+    "Menos es más"
+    Si deseas complementar usa cadenas en color blanco o plateado.
+    `
+  }, 
+  cotta:{
+    title: "Cottagecore", 
+    text:  `
+    Estilo basado a la vida rural, vinculado a la pureza de
+    la vida en el exterior, campo y naturaleza.
+    Estilo romantico, con base a los colores pastel, se dio a conocer
+    a partir del año 2020, más su origen viene del siglo XVIII en Francia.
+    Para cumplir con este estilo se observan cuellos babe, vestidos midi y
+    mangas con volumén. Vestidos volados, colores claros, encajes, estampados
+    de flores y faldas vichy.
+    Para complementar con accesarios puedes usar sombreros y cestas de paja.
+
+    Abrigos de cuadro, botas camperas y zapatos comodos.
+    `
   }
     
     
