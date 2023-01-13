@@ -175,4 +175,8 @@ router.get("/app/admin/delete/:id", async (req, res) => {
     res.redirect("/app/home/");
   }
 });
+
+router.get("/novedades",(req,res)=>{
+  res.render("novedades")
+});
 module.exports = router;

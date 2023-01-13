@@ -64,6 +64,7 @@
   color: var(--white);
   font-size: 3vh;
 }
+
 body{
   background: var(--white);
 }
@@ -429,4 +430,5 @@ input[type="submit"]:hover{
   #new_user label.labelup{
     transform: translateY(-19px);
   }
+
 }

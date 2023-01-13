@@ -16,7 +16,6 @@ html(lang="es")
                     h1 iREK 
                 nav#nav
                     a(href="/#inicio")
-                        span Inicio
 
                     if role
                         a(href="/app/admin") 
@@ -24,15 +23,19 @@ html(lang="es")
                     else 
                         a(href="/") 
                             span=userName
-
-                    a(href="/logout")
-                        span salir
-                        
-                    a(href="/#idea_verde")
-                        span Idea verde
                     
                     a(href="https://youtu.be/p2wNB5OHtz0")
                         span Discriminación?
+                    
+                    a(href="")
+                        span Como evitar la discriminación?
+
+                    a(href="/novedades")
+                        span Novedades
+
+                    a(href="/logout")
+                        span salir
+
             .description
                 h2 ¿Qué es un estilo?
                 p 
@@ -118,6 +121,49 @@ html(lang="es")
                 .style#cotta(style="background-image: url(https://www.vivalamoda.com.ar/resources/original/notas/cottagecore/cottagecore2/IMG_4039.JPG)") 
                     .type 
                         span Cottagecore
+                .style#sporty(style="background-image: url()") 
+                    .type 
+                        span Sporty 
+
+                .style#Fancy(style="background-image: url()") 
+                    .type 
+                        span Fancy 
+
+                .style#grunge(style="background-image: url(/img/estilos/chica_indie_kit.jpeg)") 
+                    .type 
+                        span Grunge
+                .style#edgy(style="background-image: url(/img/estilos/aesthetic.jpeg)") 
+                    .type 
+                        span Edgy
+                .style#girly(style="background-image: url()") 
+                    .type 
+                        span Grily girl
+
+                .style#y2k(style="background-image: url()") 
+                    .type 
+                        span Y2K
+                
+                .style#artsy(style="background-image: url()") 
+                    .type 
+                        span Artsy
+                .style#mezclilla(style="background-image: url()") 
+                    .type 
+                        span Mezclilla
+                .style#cholo(style="background-image: url()") 
+                    .type 
+                        span Cholo
+
+                .style#old(style="background-image: url()") 
+                    .type 
+                        span Old Money
+
+                .style#romantico(style="background-image: url()") 
+                    .type 
+                        span Romantico
+
+                .style#creativo(style="background-image: url()") 
+                    .type 
+                        span Creativo
 
         .styles_view#stylesView
             .header 
@@ -143,19 +189,21 @@ html(lang="es")
                         h2 iREK 
 
                 nav 
-                    a(href="/#inicio")
+                    //a(href="/#inicio")
                         span Inicio
 
-                    a(href="/#somos")
+                    //a(href="/#somos")
                         span Somos
 
-                    a(href="/#objetivos")
+                    //a(href="/#objetivos")
                         span Objetivos
 
                     a(href="")
                         span=userName
-                        
-                    a(href="/#idea_verde")
+
+                    a(href="/logout")
+                        span salir
+                    //a(href="/#idea_verde")
                         span Idea verde
             .style#style 
                 .img
