@@ -66,6 +66,84 @@ header .head nav a {
   font-size: 1.2vw;
   font-weight: 500;
 }
+.modal{
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+
+  animation: modal 2s 1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+.contenido{
+  margin: auto;
+  width: 400px;
+  height: 480px;
+  background: rgb(60, 58, 58);
+  box-shadow: 1px 7px 25px rgba(0,0,0,1);
+  transition: all 500ms ease;
+  border-radius: 10px;
+}
+.contenido header{
+  padding:0px;
+  border-radius: 10px 10px 0px 0px;
+  height: 45px;
+  background: #B886DF;
+}
+.contenido h1{
+  display:block;
+  padding: 8px ;
+  font-weight: bold;
+  color: rgb(227, 217, 217);
+}
+.contenido p{
+  display:block;
+  margin: 17px auto;
+  font-weight: bold;
+  color:rgba(0, 0, 0, 0.3333333333);
+}
+label{
+ top: 10px;
+ right: 10px;
+ color: black;
+}
+#cerrar{
+  display: none;
+}
+#cerrar + label{
+  position: fixed;
+  font-size: 25px;
+  z-index: 50;
+  background: darkred;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  right: 10px;
+  cursor: pointer;
+
+  animation: modal 2s 1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+  display:none;
+}
+@keyframes modal{
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 header .description {
   position: relative;
   margin: 2vw 4vw;

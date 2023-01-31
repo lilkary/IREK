@@ -112,11 +112,18 @@ const styles = {
   hippie: {
     title: "Hippie",
     text: `
-      Moda alternativa, creativa y original usando materiales orgánicos
-      y prendas holgadas dando una vista despreocupada estilo contracultura
-      y liberador.
-      El estilo hippie nace en los años 60 en Estados Unidos, conociéndose
-      por sus manifestaciones. En tu armario no debe faltar:
+      El movimiento hippie surgio como una corriente juvenil enemistada con
+      la guerra de Vietnam, basando su estilo de vida y valores en la lucha,
+      perdurando hasta ser absorvidos por el sistema.
+      Sin embargo, el estilo hippie nace en los años 60 en Estados Unidos, 
+      conociéndose por sus manifestaciones.Moda alternativa, creativa y original
+      usando materiales orgánicos y prendas holgadas dando una vista 
+      despreocupada estilo contracultura y liberador.
+      Espiritu opuesto al consumismo de la vida, el "hippie" valora 
+      expresiones artisticas y musicales, el amor libre y su propio
+      sistema de vida. Apoyando abiertamente las iniciativas ecologicas y 
+      ecosocialistas.
+      En tu armario no debe faltar:
       Vestidos sueltos, chalecos flojos, faldas, camisas flojas, sandalias,
       pantalones acampanados, pulseras y collares coloridos.
       
@@ -175,9 +182,17 @@ const styles = {
   hipster:{
     title: "Hipster", 
     text:  `
-      Personas jovenes con gustos musicales alternativos, gusto por deportes
-      urbanos, con un sentido íronico de moda.
-      Su origen fue en la decada de los 40del siglo XX.
+      "Hipster" (moderno) fue la palabra con la que se nombro este estilo, 
+      creada en la decada de 1940 y manteniendo su significado hasta el día
+      de hoy.
+      Creen estar en contra de valores dominantes, más en realidd solo los
+      reproducen.
+      Basando sus creencias a la independencia, consumo de alimentos 
+      organicos, products veganos y ropa de segunda mano. 
+      Personas jovenes con gustos musicales alternativos, como el jazz, indie 
+      y musica alternativa; gusto por deportes urbanos, con un sentido 
+      íronico de moda.
+      
       En el armario de un hipster no debe faltar:
       Camisas basícas, prendas de color, converse, bufandas, bolsa bandolera,
       sombreros, gorros, pantalones pitillo  
@@ -250,6 +265,13 @@ const styles = {
   emo:{
     title: "Emo", 
     text:  `
+     Incomprendidos y rechazados, buscando protección en un grupo con el 
+     que se identifiquen y compartan sentimientos, gustos, estetica y 
+     vestimenta.
+     La tendecia principal "emo" se basa a la tristeza y melancolia.
+     Su origen fue a mediados de la decada de 1980 en Estados Unidos, 
+     considerada una subcultura creada en torno al genero musical rock 
+     y hardcore punk. 
      Son una generación vestida por la infelicidad, por música y letras 
      depresivas y por la profunda necesidad de sentir emociones, de saltar
      del plano racional a las sensaciones. 
@@ -258,7 +280,8 @@ const styles = {
      Las prendas varían y sobre todo son creativas, lo que necesita es
      negro no importa la prenda sino el color, nada cambia su derecho
      como persona y son un poco extrovertidos, eso debidamente a lo analizado.
-
+     Suelen llevar delineados los ojos, sombras y labiales negros, 
+     pircings y uno que otro tatuaje.
     `,
     img: "/img/girl-5706745_1920.jpg"
   },
@@ -267,7 +290,7 @@ const styles = {
     text:  `
      Estilo moderno que engloba generos muiscales, cinematograficos y moda
      que poseen grandes masas, por ellos pertenecen a un genero indepentiente.
-     La cultura Indie poseee cierta similitud con la hipster, ya que quienes se
+     La cultura Indie posee cierta similitud con la hipster, ya que quienes se
      apropian de dicos estilo en su amyoria son jovenes, que rechazan
     cualquier tendencia en busca de su estilo propio.
     Ser indie significa ser independiente. Como consejos:Evita la ropa de marca
@@ -320,7 +343,12 @@ const styles = {
   Egirl:{
     title: "Egirl/boy", 
     text:  `
-    Comunidad de adolescentes que cumplen con una estética grunge.
+    Comunidad más reciente entre la generación Z(adolecentes) que
+    evita la estetica actual por una estetica más crunge, surgé a partir
+    de las redes sociales tras la era de los influencers. Quienes portan este 
+    estilo son la ultima versión de la contracultura dominante, similar a los
+    emo (1990-2000), su objetivo es cruzar los limites sin impotar lo que 
+    piensen las generaciones mayores.
     Esta tendencia de moda surge en  tiktok, dandose a conocer primero 
     el estilo de las chicas, más a pesar de esto comparten 
     rasgos con los e-boys por ejemplo el amor a los videojuegos.
@@ -337,12 +365,16 @@ const styles = {
   ArtHoe:{
     title: "Art Hoe", 
     text:  `
+    Cómo su nombre lo menciona, todas las personas vinculadas a este
+    estilo aman el arte, su vida esta llena de 
+    creatividad, comparten el amor por observar, apreciar 
+    e incluso crear "arte".
     Un estilo que va de la mano con la creatividad, 
     surgío en 2015 y fue creado para romper estereotipos 
     de genro, raciales y de clase. 
-    Quienes forman parte de este estilosuelen ser 
-    amantes del arte, son creativos, les gusta leer y 
-    disfrutan de escribir.
+    Quienes forman parte de este estilo suelen ser creativos, disfrutan
+    de la lectura y de escribir todo lo que cruza por sus mentes o se
+    vincula a sus sentimentos.
     Suelen usar ropa comoda, pans, overoles, blusas flojas, 
     en su mayoria ropa con estampados y llena de vida.
     En su armaria no pueden faltar los momjeans, ya que con ellos
@@ -356,30 +388,41 @@ const styles = {
   Urbanic:{
     title: "Urbanic", 
     text:  `
-    Estilo que persigue la modernidad y el caracter urbanita.
+    Estilo juvenil donde domina la comodidad al momento de 
+    elegir como vestir.
+    Persigue la modernidad y el caracter urbanita.
     Este estilo toma base de otro estilo tendencia de los 90, el 
-    urbanic chic nos traslada a la segunda decada del siglo XXI.
+    urbanic nos traslada a la segunda decada del siglo XXI.
+    Para lucir un look urbanic es necesario mezclar prendas
+    basicas muy citadinas, utilizar texturas, prendas monocromáticas
+    (rayas o cuadros) con los colores base negro, blanco y azul.
     Algunos ejemplos de las mejores prendas para vestir conforme
-    al urbanic chic sería los mini vestidos, pantalones
-    anchos, camisas blancas, tacones, gafas de sol, estampados alegres,
-    a rayas o/y tonos blancos.
-    ¡Urbanic Chic es lo comodo, util, sencillo y actual!
+    al urbanic sería los mini vestidos, pantalones
+    anchos, camisas blancas, leggins, camisetas, sudaderas,
+    gorras, carteras, cardigans, vaqueros, zapatillas deportivas, 
+    gafas de sol, estampados alegres, a rayas o/y tonos blancos.
+    ¡Urbanic se basa a lo comodo, util, sencillo y actual!
     `
   }, 
   mini:{
     title: "Minimalista", 
     text:  `
+    El "minimalista" es una tendecia/estilo artistico que hace referencia
+    al aspecto del anteriorismo, buscando encontrar un look con la menor
+    cantidad de accesorios y prendas, pero lindo a la vista.
     Tejidos, cortes sencillos y colores neutros es la base perfecta para 
     aplicar en nuestras vidas el estilo minimalista.
     Estilo el cúal comienza a destacar en los 90, busca un estilo sobrio,
-    elegante y sencillo. El estilo minimalista esta lejos de ser un 
-    estilo aburrido, se basa a las ñíneas rectas y figuras 
-    geometricas convirtiendose en un total arte.
+    elegante y sencillo. 
     Sus prendas basicas son los trajes (a pantalón y chaqueta), jeans rectos,
     faldas rectas, gabardinas, zapatillas deportivas, zapatos de salón,
     botas al tobillo y como accesorios ten presente siempr la frase:
     "Menos es más"
     Si deseas complementar usa cadenas en color blanco o plateado.
+    El estilo minimalista esta lejos de ser un 
+    estilo aburrido, este te invita a combinar prendas 
+    con estampados como líneas rectas, figuras 
+    geometricas y clores neutros, convirtiendose en un total arte.
     `
   }, 
   cotta:{
@@ -389,6 +432,11 @@ const styles = {
     la vida en el exterior, campo y naturaleza.
     Estilo romantico, con base a los colores pastel, se dio a conocer
     a partir del año 2020, más su origen viene del siglo XVIII en Francia.
+    Aparte de la vestimenta bonita, se conoce que puede ayudar a 
+    satistacer un deseo popular de "nostalgia" así cómo puede también 
+    ser un escape a el estres y traumas.
+    Enfatiza a la naturaleza, simplicidad y paz, descrito como un
+    movimiento visual convirtiendose en un estilo de vida y de vestimenta.
     Para cumplir con este estilo se observan cuellos babe, vestidos midi y
     mangas con volumén. Vestidos volados, colores claros, encajes, estampados
     de flores y faldas vichy.
@@ -474,7 +522,7 @@ const styles = {
     conoce que para 1837 se utilizaba la palabra "edge" significandose "hacer
     algo irracional" o "estar al borde" de la cúal proviene el nombre
     "edgy". 
-    Hpy en día se conoce que este estilo es provocativo, audaz, cool y
+    Hoy en día se conoce que este estilo es provocativo, audaz, cool y
     obscuro; no solo basado a la forma de vestir, sino, tambien a personajes 
     y dibujos. Basado en usar prendas rockeras, imcorporando prendas de cuero,
     terciopelo, botas con accesorios llamativos como cadenas con 
@@ -534,7 +582,7 @@ const styles = {
     title: "Artsy", 
     text:  `
     Nada mejor que la combinación de la moda y el arte, un claro ejemplo
-    de esto es el estilo "artsy", el cúal se encuntra muy lejos de las
+    de esto es el estilo "artsy", el cúal se encuentra muy lejos de las
     tendencias tradicionales en la moda, destacando por sus diseños 
     diferentes gracias a la idea de que cada individuo persive y representa su
     propia idea de lo que es el arte. 
