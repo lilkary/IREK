@@ -1,3 +1,5 @@
+onload = () => {
+
 const id = Id => document.getElementById(Id)
 const $  = Q  => document.querySelector(Q)
 const $all  = Q  => document.querySelectorAll(Q)
@@ -158,4 +160,5 @@ id("login").onsubmit = event => {
   })
   .then( res => res.json())
   .then(ResErrorValidator)
+}
 }
