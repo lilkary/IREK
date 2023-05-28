@@ -66,83 +66,8 @@ header .head nav a {
   font-size: 1.2vw;
   font-weight: 500;
 }
-.modal{
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-
-  animation: modal 2s 1s;
-  animation-fill-mode: forwards;
-  visibility: hidden;
-  opacity: 0;
-}
-.contenido{
-  margin: auto;
-  width: 400px;
-  height: 480px;
-  background: rgb(60, 58, 58);
-  box-shadow: 1px 7px 25px rgba(0,0,0,1);
-  transition: all 500ms ease;
-  border-radius: 10px;
-}
-.contenido header{
-  padding:0px;
-  border-radius: 10px 10px 0px 0px;
-  height: 45px;
-  background: #B886DF;
-}
-.contenido h1{
-  display:block;
-  padding: 8px ;
-  font-weight: bold;
-  color: rgb(227, 217, 217);
-}
-.contenido p{
-  display:block;
-  margin: 17px auto;
-  font-weight: bold;
-  color:rgba(0, 0, 0, 0.3333333333);
-}
-label{
- top: 10px;
- right: 10px;
- color: black;
-}
-#cerrar{
+header .head .menu-icon {
   display: none;
-}
-#cerrar + label{
-  position: fixed;
-  font-size: 25px;
-  z-index: 50;
-  background: darkred;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  right: 10px;
-  cursor: pointer;
-
-  animation: modal 2s 1s;
-  animation-fill-mode: forwards;
-  visibility: hidden;
-  opacity: 0;
-}
-
-#cerrar:checked + label, #cerrar:checked ~ .modal {
-  display:none;
-}
-@keyframes modal{
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
 }
 header .description {
   position: relative;
@@ -394,6 +319,189 @@ header .description p {
 }
 #stylesView .aside .green-idea .heart {
   margin-right: 2vw;
+}
+
+@media (orientation: portrait) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  header {
+    height: 38vh;
+    background-position: -190px 0;
+  }
+  header .head .title {
+    margin-top: 12px;
+  }
+  header .head .title img {
+    width: 28px;
+  }
+  header .head .title h1 {
+    font-size: 16px;
+  }
+  header .head nav {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    display: block;
+    left: -100%;
+    height: 100vh;
+    width: auto;
+    background: var(--white);
+    transition: left 0.5s ease-in-out;
+  }
+  header .head nav a {
+    display: block;
+    color: var(--black);
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  header .head nav.open {
+    left: 0;
+  }
+  header .head .menu-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: 12px;
+    transform: scale(0.7);
+    display: block;
+  }
+  header .head .menu-icon .icon, header .head .menu-icon .icon::after, header .head .menu-icon .icon::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: 0.4s;
+  }
+  header .head .menu-icon .icon::after {
+    top: 16.3333333333px;
+  }
+  header .head .menu-icon .icon::before {
+    top: 31px;
+  }
+  header .head .menu-icon .icon.open::before {
+    top: 0;
+  }
+  header .head .menu-icon .icon.open {
+    top: 16.3333333333px;
+    transform: rotate(-45deg);
+  }
+  header .head .menu-icon .icon.icon.open::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  header .description {
+    max-width: 100%;
+    height: 25vh;
+    overflow-x: hidden;
+  }
+  header .description h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+  header .description p {
+    font-size: 14px;
+  }
+  .styles_container {
+    max-height: 62vh;
+    overflow-x: hidden;
+  }
+  .styles_container h2 {
+    font-size: 20px;
+  }
+  .styles_container .container .style {
+    width: 110px;
+    height: 150px;
+  }
+  .styles_container .container .style .type {
+    font-size: 17px;
+  }
+  #stylesView.styles_view.open {
+    overflow: visible;
+    overflow-x: hidden;
+  }
+  #stylesView.styles_view .header .title #back.back-button, #stylesView.styles_view .header .title #back.back-button svg {
+    width: 40px;
+    height: 40px;
+  }
+  #stylesView.styles_view .header a h2 {
+    font-size: 18px;
+  }
+  #stylesView.styles_view #style.style {
+    flex-direction: column;
+  }
+  #stylesView.styles_view #style.style .img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 7px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  #stylesView.styles_view #style.style .details {
+    width: 100%;
+  }
+  #stylesView.styles_view #style.style .details h2 {
+    font-size: 20px;
+    margin: 22px 0 10px 0;
+  }
+  #stylesView.styles_view #style.style .details p {
+    height: 20vh;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+  #stylesView.styles_view .aside {
+    flex-direction: column-reverse;
+  }
+  #stylesView.styles_view .aside .green-idea {
+    width: calc(100% - 22px);
+    height: fit-content;
+    border: solid 4px rgba(116, 138, 102, 0.2666666667);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  #stylesView.styles_view .aside .green-idea .idea {
+    font-size: 18px;
+  }
+  #stylesView.styles_view .comments {
+    width: 100%;
+  }
+  #stylesView.styles_view .comments .new-comment {
+    width: 95%;
+    margin: 0 2.5% 0 2.5%;
+    height: 44px;
+  }
+  #stylesView.styles_view .comments .new-comment input[type=submit] {
+    height: 30px;
+    width: 60px;
+    border-radius: 4px;
+  }
+  #stylesView.styles_view .comments #comment_container.comment-container .comment {
+    padding: 10px;
+  }
+  #stylesView.styles_view .comments #comment_container.comment-container .comment .header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  #stylesView.styles_view .comments #comment_container.comment-container .comment .header h3 {
+    font-size: 16px;
+    margin: 0 0 0 10px;
+  }
+  #stylesView.styles_view .comments #comment_container.comment-container .comment .body .like {
+    align-items: center;
+  }
+  #stylesView.styles_view .comments #comment_container.comment-container .comment .body .like svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

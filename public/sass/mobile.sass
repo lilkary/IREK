@@ -1,0 +1,169 @@
+@media (orientation: portrait)
+    body
+        height: 100vh
+        overflow: hidden
+    header
+        height: 38vh
+        background-position: -190px 0
+        .head
+            .title
+                margin-top: 12px
+                img
+                    width: 28px
+                h1
+                    font-size: 16px
+
+            nav
+                position: absolute
+                z-index: 9
+                top: 0
+                display: block
+                left: -100%
+                height: 100vh
+                width: auto
+                background: var(--white)
+                transition: left 0.5s ease-in-out
+                a
+                    display: block
+                    color: var(--black)
+                    width: 100%
+                    font-size: 18px
+                    padding: 10px 15px
+                    box-sizing: border-box
+                    margin: 10px 0
+                &.open
+                    left: 0
+            .menu-icon
+                width: 40px
+                height: 40px
+                position: relative
+                margin-right: 12px
+                transform: scale(.7)
+                display: block
+
+                .icon, .icon::after, .icon::before
+                    position: absolute
+                    content: ""
+                    display: block
+                    width: 100%
+                    height: 6px
+                    background: var(--white)
+                    border-radius: 2px
+                    transition: .4s
+
+                .icon::after
+                    top: calc(40px/3 + 3px)
+
+                .icon::before
+                    top: calc(40px - 9px)
+
+                .icon.open::before
+                    top: 0
+
+                .icon.open
+                    top: calc(40px/3 + 3px)
+                    transform: rotate(-45deg)
+
+                .icon.icon.open::after
+                    top: 0
+                    transform: rotate(90deg)
+
+        .description
+            max-width: 100%
+            height: 25vh
+            overflow-x: hidden
+            h2
+                font-size: 20px
+                margin: 0 0 10px 0
+            p
+                font-size: 14px
+    .styles_container
+        max-height: 62vh
+        overflow-x: hidden
+
+        h2
+            font-size: 20px
+        .container
+            .style
+                width: 110px
+                height: 150px
+
+                .type
+                    font-size: 17px
+
+    #stylesView.styles_view
+        &.open
+            overflow: visible
+            overflow-x: hidden
+        .header
+            .title
+                #back.back-button, #back.back-button svg
+                    width: 40px
+                    height: 40px
+
+            a h2
+                font-size: 18px
+
+        #style.style
+            flex-direction: column
+
+            .img
+                width: 100%
+                height: 30vh
+                border-radius: 7px
+                background-size: contain
+                background-position: center
+                background-repeat: repeat
+
+            .details
+                width: 100%
+                h2
+                    font-size: 20px
+                    margin: 22px 0 10px 0
+
+                p
+                    height: 20vh
+                    font-size: 14px
+                    margin: 0 0 10px 0
+
+        .aside 
+            flex-direction: column-reverse
+            .green-idea
+                width: calc(100% - 22px)
+                height: fit-content
+                border: solid 4px #748A6644
+                padding: 5px
+                border-radius: 5px
+                .idea 
+                    font-size: 18px
+
+        .comments
+            width: 100%
+            .new-comment 
+                width: 95%
+                margin: 0 2.5% 0 2.5%
+                height: 44px
+                input[type="submit"]
+                    height: 30px
+                    width: 60px
+                    border-radius: 4px
+
+            #comment_container.comment-container
+                .comment 
+                    padding: 10px
+                    .header 
+                        img 
+                            width: 30px
+                            height: 30px
+                            border-radius: 50%
+                        h3
+                            font-size: 16px
+                            margin: 0 0 0 10px
+
+                    .body 
+                        .like 
+                            align-items: center
+                            svg 
+                                width: 30px 
+                                height: 30px
+            

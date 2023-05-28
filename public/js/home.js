@@ -728,6 +728,9 @@ const addComent = async () => {
 
   const comment = id("new_comment").value
   const body = JSON.stringify({comment, style: lastStyle})
+  console.log(body)
+  console.log(lastStyle)
+  console.log(comment)
 
   const commentSend =  await ( await fetch("/app/new-comment", {
     method: "POST",
@@ -776,3 +779,13 @@ window.addEventListener("popstate", () => {
   setStyleView(styles[style.id], style.style.backgroundImage, style.id)
   
 })
+
+id("icon").onclick = () => {
+  id("icon").classList.toggle("open")
+  id("nav" ).classList.toggle("open")
+}
+
+id("nav").onclick = () => {
+  id("icon").classList.toggle("open")
+  id("nav" ).classList.toggle("open")
+}

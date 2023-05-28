@@ -430,5 +430,31 @@ input[type="submit"]:hover{
   #new_user label.labelup{
     transform: translateY(-19px);
   }
-
+  form{
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+    padding: 11px
+  }
+  .input input{
+    font-size: 17px;
+  }
+  div.input {
+    height: 44px;
+    margin: 12px 0 ;
+  }
+  label{
+    font-size: 17px;
+  }
+  h2#form-title{
+    font-size: 19px;
+  }
+  input[type="submit"]{
+    font-size: 17px;
+    padding: 7px 20px;
+    border-radius: 10px;
+  }
+  .notaccount, .notaccount.a{
+    font-size: 15px;
+  }
 }
