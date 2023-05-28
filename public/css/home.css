@@ -431,6 +431,9 @@ header .description p {
     width: 40px;
     height: 40px;
   }
+  #stylesView.styles_view .header nav a span {
+    font-size: 18px;
+  }
   #stylesView.styles_view .header a h2 {
     font-size: 18px;
   }
